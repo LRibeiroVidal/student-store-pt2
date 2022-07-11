@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-import { SECRET_KEY } from "../config";
+const { SECRET_KEY } = require("../config");
 
 function generateToken(data) {
 	const token = jwt.sign(data, SECRET_KEY);
